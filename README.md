@@ -16,11 +16,7 @@ The fit method takes 4 positional arguments and 1 keyword argument:
 
 - **mean_function**: The desired mean function to be used by the algorithm.
 
-<<<<<<< HEAD
 - **iterations**: The number of needed iterations. Default: 10. Of course it is better to implement a mechanism that watches the convergence of our model and stops training when the model has converged enough (Feel free to implement that and Pull request).
-=======
-- **iterations**: The number of needed iterations. Default: 10. Of course it is better to implement a mechanism that watches the convergence of our model and stops training when the model has converged enough.
->>>>>>> eea9afef61e777d22410401b25e9b6cc0ddf7ee0
 
 - **Returns**: A dictionary with keys from 0 to k-1, each key maps to a cluster (an iterable of d-dimensional vectors).
 
