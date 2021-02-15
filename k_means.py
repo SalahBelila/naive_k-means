@@ -1,7 +1,7 @@
 import random
 import matplotlib.pyplot
 class KMeans:
-    def fit(self, data_iterable, k, distance_function, iterations=10):
+    def fit(self, data_iterable, k, distance_function, mean_function, iterations=10):
         #initialize centroids
         centroids = []
         for i in range(k):
@@ -21,7 +21,7 @@ class KMeans:
             # update the centroids
             for c_index in range(k):
                 cluster = clusters[c_index]
-                centroids[c_index] = sum(cluster)/len(cluster)
+                centroids[c_index] = mean(cluster)
             
             for index in range(k):
                 image = random.choice(clusters[index]).reshape(28, 28)
